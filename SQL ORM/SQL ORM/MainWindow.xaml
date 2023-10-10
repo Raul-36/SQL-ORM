@@ -7,16 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="400">
     <DockPanel>
-        <StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal">
-            <Button Content="Registration"/>
-            <Button Content="User lvl1 login"/>
-            <Button Content="User lvl2 login"/>
-            <Button Content="Admin login"/>
-        </StackPanel>
+        <UniformGrid Columns="3" DockPanel.Dock="Bottom">
+            <Button Content="Create"/>
+            <Button Content="All"/>
+            <Button Content="Delete"/>
+        </UniformGrid>
         <ContentControl Content="{Binding ActiveViewModel}">
-            
-            
+
+
         </ContentControl>
-        
+
     </DockPanel>
+
 </Window>
